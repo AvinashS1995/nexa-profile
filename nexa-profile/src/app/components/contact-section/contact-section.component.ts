@@ -1,6 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component, Input } from '@angular/core';
 import { FormsModule, NgForm } from '@angular/forms';
+import { ApiService } from '../../core/service/api.service';
 
 interface ContactInfo {
   location?: {
@@ -31,6 +32,8 @@ interface ContactInfo {
 export class ContactSectionComponent {
   @Input({ required: true }) data!: ContactInfo;
 
+  constructor(private apiService: ApiService) {}
+
   formData = {
     name: '',
     email: '',
@@ -44,10 +47,13 @@ export class ContactSectionComponent {
     if (!form.valid) {
       return;
     }
-    this.successMessage = 'Message sent successfully!';
-    form.resetForm();
-    setTimeout(() => {
-      this.successMessage = '';
-    }, 4000);
+    this.apiService.sendMessage(form.value).subscribe((res) => {
+      this.successMessage = res.message;
+
+      form.resetForm();
+      setTimeout(() => {
+        this.successMessage = '';
+      }, 4000);
+    });
   }
 }
