@@ -1,0 +1,11 @@
+:host {
+  display: block;
+}
+
+nav {
+  backdrop-filter: blur(20px);
+}
+
+button {
+  font-family: 'Inter', system-ui, sans-serif;
+}

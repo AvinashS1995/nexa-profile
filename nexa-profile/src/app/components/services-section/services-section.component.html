@@ -1,0 +1,25 @@
+<section id="services" class="py-20 px-4 bg-slate-50">
+  <div class="container mx-auto max-w-6xl">
+    <div class="text-center mb-16">
+      <h2 class="text-4xl md:text-5xl mb-4 font-bold">Services</h2>
+      <div class="w-20 h-1 bg-orange-500 mx-auto"></div>
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-6">
+      <div
+        *ngFor="let service of data"
+        class="bg-white rounded-xl p-8 hover:shadow-xl transition-all duration-300 group"
+      >
+        <div
+          class="w-16 h-16 rounded-lg flex items-center justify-center mb-6 group-hover:scale-110 transition-transform"
+          [style.backgroundColor]="service.color + '20'"
+        >
+          <i class="{{ service.icon }} text-2xl" [style.color]="service.color"></i>
+        </div>
+
+        <h3 class="text-xl mb-4 font-semibold">{{ service.title }}</h3>
+        <p class="text-slate-600 leading-relaxed">{{ service.description }}</p>
+      </div>
+    </div>
+  </div>
+</section>

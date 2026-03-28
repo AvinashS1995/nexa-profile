@@ -1,0 +1,7 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css');
+@import url('https://cdn.jsdelivr.net/npm/tw-animate-css@1.3.8/dist/tw-animate.min.css');
+@import './styles/globals.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

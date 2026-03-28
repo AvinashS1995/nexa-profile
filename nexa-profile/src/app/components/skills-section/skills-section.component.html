@@ -1,0 +1,35 @@
+<section id="skills" class="py-20 px-4 bg-slate-50">
+  <div class="container mx-auto max-w-6xl">
+    <div class="text-center mb-16">
+      <h2 class="text-4xl md:text-5xl mb-4 font-bold">Skills & Expertise</h2>
+      <div class="w-20 h-1 bg-orange-500 mx-auto"></div>
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-8">
+      <div
+        *ngFor="let category of data"
+        class="bg-white rounded-xl p-8 shadow-sm hover:shadow-lg transition-shadow"
+      >
+        <div class="flex items-center gap-3 mb-6">
+          <div
+            class="w-12 h-12 rounded-lg flex items-center justify-center"
+            [style.backgroundColor]="category.color + '20'"
+          >
+            <i class="{{ category.icon }} text-xl" [style.color]="category.color"></i>
+          </div>
+          <h3 class="text-xl font-semibold">{{ category.title }}</h3>
+        </div>
+
+        <div class="flex flex-wrap gap-2">
+          <div
+            *ngFor="let skill of category.skills"
+            class="flex items-center gap-2 px-3 py-2 bg-slate-50 rounded-lg hover:bg-slate-100 transition-colors"
+          >
+            <i class="{{ skill.icon }}" [style.color]="category.color"></i>
+            <span class="text-sm">{{ skill.name }}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

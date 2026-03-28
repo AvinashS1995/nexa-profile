@@ -1,0 +1,67 @@
+<section id="about" class="py-20 px-4 bg-white">
+  <div class="container mx-auto max-w-6xl">
+    <div class="text-center mb-16">
+      <h2 class="text-4xl md:text-5xl mb-4 font-bold">About Me</h2>
+      <div class="w-20 h-1 bg-orange-500 mx-auto"></div>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-12 items-center mb-16">
+      <div>
+        <h3 class="text-3xl mb-6 bg-gradient-to-r from-orange-500 to-orange-600 bg-clip-text text-transparent">
+          {{ data.title }}
+        </h3>
+        <p class="text-slate-600 mb-6 leading-relaxed">{{ data.bio }}</p>
+        <p *ngIf="data.bio2" class="text-slate-600 leading-relaxed">{{ data.bio2 }}</p>
+      </div>
+
+      <div class="grid grid-cols-3 gap-6">
+        <div class="text-center p-6 bg-gradient-to-br from-orange-50 to-orange-100 rounded-xl hover:shadow-lg transition-all hover:scale-105">
+          <div class="w-16 h-16 rounded-full bg-white flex items-center justify-center mx-auto mb-4 shadow-md">
+            <i class="fa-solid fa-briefcase text-orange-500 text-lg"></i>
+          </div>
+          <div class="text-3xl mb-2 font-bold text-orange-600">{{ data.stats.experience || 0 }}+</div>
+          <div class="text-sm text-slate-600 font-medium">Years Experience</div>
+        </div>
+
+        <div class="text-center p-6 bg-gradient-to-br from-orange-50 to-orange-100 rounded-xl hover:shadow-lg transition-all hover:scale-105">
+          <div class="w-16 h-16 rounded-full bg-white flex items-center justify-center mx-auto mb-4 shadow-md">
+            <i class="fa-solid fa-users text-orange-500 text-lg"></i>
+          </div>
+          <div class="text-3xl mb-2 font-bold text-orange-600">{{ data.stats.clients || 0 }}+</div>
+          <div class="text-sm text-slate-600 font-medium">Clients</div>
+        </div>
+
+        <div class="text-center p-6 bg-gradient-to-br from-orange-50 to-orange-100 rounded-xl hover:shadow-lg transition-all hover:scale-105">
+          <div class="w-16 h-16 rounded-full bg-white flex items-center justify-center mx-auto mb-4 shadow-md">
+            <i class="fa-solid fa-award text-orange-500 text-lg"></i>
+          </div>
+          <div class="text-3xl mb-2 font-bold text-orange-600">{{ data.stats.recruiters || 0 }}+</div>
+          <div class="text-sm text-slate-600 font-medium">Recruiters</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-gradient-to-r from-orange-500 to-orange-600 rounded-2xl p-8 text-white">
+      <div class="flex items-center gap-3 mb-6">
+        <i class="fa-solid fa-sparkles text-lg"></i>
+        <h3 class="text-2xl font-semibold">Key Achievements</h3>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="bg-white/10 backdrop-blur-sm rounded-lg p-4 border border-white/20">
+          <div class="text-2xl font-bold mb-2">15%</div>
+          <p class="text-sm opacity-90">Efficiency Improvement in SFA System</p>
+        </div>
+
+        <div class="bg-white/10 backdrop-blur-sm rounded-lg p-4 border border-white/20">
+          <div class="text-2xl font-bold mb-2">100%</div>
+          <p class="text-sm opacity-90">Client Satisfaction Rate</p>
+        </div>
+
+        <div class="bg-white/10 backdrop-blur-sm rounded-lg p-4 border border-white/20">
+          <div class="text-2xl font-bold mb-2">10+</div>
+          <p class="text-sm opacity-90">Enterprise Projects Delivered</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
