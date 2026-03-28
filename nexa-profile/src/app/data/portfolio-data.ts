@@ -220,6 +220,16 @@ export const portfolioData: Portfolio[] = [
           'https://weather-forecast-dashboard-theta.vercel.app/weather',
         _id: { $oid: '692170815115746f7f9b4f80' },
       },
+      {
+        title: 'DevTrack Pro',
+        category: 'Web App (Developer Productivity Tool)',
+        role: 'Angular 18, Angular Material, DevExtreme, RxJS',
+        description:
+          'Built a developer productivity tracker application featuring secure authentication with JWT, role-based access, and encrypted storage. Implemented a KPI-driven dashboard with DevExtreme DataGrid supporting CRUD operations, filtering, pagination, and Excel export. Designed reusable services (ApiService, CryptoService) and HTTP interceptors for scalable architecture.',
+        codeLink: 'https://github.com/AvinashS1995/devtrack-pro.git',
+        previewLink: 'https://devtrack-pro-theta.vercel.app/login',
+        _id: { $oid: 'devtrackpro001' },
+      },
     ],
     services: [
       {
