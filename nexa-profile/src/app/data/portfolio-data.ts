@@ -100,19 +100,21 @@ export const portfolioData: Portfolio[] = [
       name: 'Avinash Suryawanshi',
       description:
         "Creativity with purpose, design with impact — that's my approach, that's my passion.",
-      roles: ['Angular Developer', 'Front End Developer', 'Full Stack Developer'],
+      roles: [
+        'Angular Developer',
+        'Front End Developer',
+        'Full Stack Developer',
+      ],
     },
     about: {
       name: 'Avinash Suryawanshi',
       title: 'Angular Developer',
-      bio:
-        'As an Angular Developer with 3 years of experience, I am passionate about crafting modern UI/UX. My expertise lies in building intuitive and engaging user interfaces that elevate the overall user experience.',
-      bio2:
-        'With 3 years as an Angular Developer, I thrive on crafting smooth, scalable, and user-centric web applications. My motivation is creating elegant solutions and continuous learning, aspiring to lead innovative front-end architectures that make a significant impact.',
+      bio: 'As an Angular Developer with 4 years of experience, I am passionate about crafting modern UI/UX. My expertise lies in building intuitive and engaging user interfaces that elevate the overall user experience.',
+      bio2: 'With 4 years as an Angular Developer, I thrive on crafting smooth, scalable, and user-centric web applications. My motivation is creating elegant solutions and continuous learning, aspiring to lead innovative front-end architectures that make a significant impact.',
       stats: {
-        experience: 3,
-        clients: 4,
-        recruiters: 4,
+        experience: 4,
+        clients: 2,
+        recruiters: 2,
       },
     },
     education: [
@@ -143,7 +145,14 @@ export const portfolioData: Portfolio[] = [
         project: 'Hotel Management Monitoring',
         description:
           'As a Front End Developer at Ambroasian R&D Pvt Ltd, I developed intuitive interfaces for the Hotel Management Monitoring project. This optimized data presentation, resulting in a measurable 15% improvement in operational reporting efficiency.',
-        techStack: ['Angular', 'Bootstrap', 'TypeScript', 'HTML', 'CSS', 'JavaScript'],
+        techStack: [
+          'Angular',
+          'Bootstrap',
+          'TypeScript',
+          'HTML',
+          'CSS',
+          'JavaScript',
+        ],
         _id: { $oid: '692170115115746f7f9b4d6d' },
       },
       {
@@ -155,7 +164,14 @@ export const portfolioData: Portfolio[] = [
         project: 'Sales Force Automation (SFA)',
         description:
           'As an Angular Front End Developer Executive at Torrent Pharma Ltd Corporate Office, I engineered user-centric features for the Sales Force Automation (SFA) system. My contributions directly boosted sales team efficiency by 15%, significantly streamlining critical daily operations.',
-        techStack: ['Angular', 'Angular Material', 'DevExtreme', 'TypeScript', 'RxJS', 'REST APIs'],
+        techStack: [
+          'Angular',
+          'Angular Material',
+          'DevExtreme',
+          'TypeScript',
+          'RxJS',
+          'REST APIs',
+        ],
         _id: { $oid: '69216f625115746f7f9b4bd1' },
       },
     ],
@@ -166,8 +182,8 @@ export const portfolioData: Portfolio[] = [
         role: 'Angular, Angular Material, Devextreme',
         description:
           'Developing SFA product for sales teams, optimizing workflows and data visualization. role-based dynamic dashboards with KPIs, charts, and activity logs tailored for Sales Reps, Managers, and Admins.',
-        codeLink: 'https://github.com/yourname/ai-resume-builder',
-        previewLink: 'https://airesumebuilder.vercel.app',
+        codeLink: 'https://github.com/yourname/sfa',
+        previewLink: 'https://sfatorrentapp.vercel.app/',
         _id: { $oid: '69188b69df206831325e97ab' },
       },
       {
@@ -196,52 +212,60 @@ export const portfolioData: Portfolio[] = [
         role: 'Angular, Tailwind CSS, Open Meteo Live Api',
         description:
           'I engineered a dynamic weather forecasting application, leveraging Angular, Tailwind CSS, and the Open Meteo API. This utility delivers precise, real-time, location-based hourly and weekly forecasts with severe weather alerts, empowering users to plan their day effectively with comprehensive weather insights.',
-        codeLink: 'https://github.com/AvinashS1995/weather-forecast-dashboard.git',
-        previewLink: 'https://weather-forecast-dashboard-theta.vercel.app/weather',
+        codeLink:
+          'https://github.com/AvinashS1995/weather-forecast-dashboard.git',
+        previewLink:
+          'https://weather-forecast-dashboard-theta.vercel.app/weather',
         _id: { $oid: '692170815115746f7f9b4f80' },
       },
     ],
     services: [
       {
         title: 'Frontend Development',
-        icon: 'fa-code',
+        icon: 'fas fa-code',
         color: '#f58b49',
-        description: 'Building fast, modern, and responsive web interfaces using Angular, React, and TypeScript.',
+        description:
+          'Building fast, modern, and responsive web interfaces using Angular, React, and TypeScript.',
         _id: { $oid: '69187e8fdb9e1eb848d10fba' },
       },
       {
         title: 'UI/UX Design',
-        icon: 'fa-paint-brush',
+        icon: 'fas fa-pencil-ruler',
         color: '#f58b49',
-        description: 'Designing clean, user-friendly interfaces focused on usability, accessibility, and visual appeal.',
+        description:
+          'Designing clean, user-friendly interfaces focused on usability, accessibility, and visual appeal.',
         _id: { $oid: '69187fcec01a075688e71470' },
       },
       {
         title: 'API Integration',
-        icon: 'fa-plug',
+        icon: 'fas fa-plug',
         color: '#f58b49',
-        description: 'Connecting apps with secure backend APIs and optimizing data flow using RESTful services.',
+        description:
+          'Connecting apps with secure backend APIs and optimizing data flow using RESTful services.',
         _id: { $oid: '69187f3bc01a075688e713e9' },
       },
       {
         title: 'Performance Optimization',
-        icon: 'fa-rocket',
+        icon: 'fas fa-rocket',
         color: '#f58b49',
-        description: 'Improving load time, Core Web Vitals, and rendering efficiency for seamless user experiences.',
+        description:
+          'Improving load time, Core Web Vitals, and rendering efficiency for seamless user experiences.',
         _id: { $oid: '69187f5fc01a075688e713fc' },
       },
       {
         title: 'Maintenance & Support',
-        icon: 'fa-tools',
+        icon: 'fas fa-life-ring',
         color: '#f58b49',
-        description: 'Ensuring applications run smoothly with updates, monitoring, and quick issue resolution.',
+        description:
+          'Ensuring applications run smoothly with updates, monitoring, and quick issue resolution.',
         _id: { $oid: '69187f7dc01a075688e71411' },
       },
       {
         title: 'Deployment & DevOps',
-        icon: 'fa-server',
+        icon: 'fas fa-tools',
         color: '#f58b49',
-        description: 'CI/CD setup and deploying scalable apps on AWS, Vercel, and Render for production-ready systems.',
+        description:
+          'CI/CD setup and deploying scalable apps on AWS, Vercel, and Render for production-ready systems.',
         _id: { $oid: '69187f97c01a075688e71428' },
       },
     ],
@@ -253,11 +277,11 @@ export const portfolioData: Portfolio[] = [
         country: 'India',
         postalCode: '380009',
       },
-      email: 'abhiyavm@gmail.com',
-      phone: '8390308967',
+      email: 'ai.suryawanshi95@gmail.com',
+      phone: '9096683915',
       socialMedia: {
-        linkedin: 'https://linkedin.com/in/yourprofile',
-        github: 'https://github.com/yourprofile',
+        linkedin: 'https://www.linkedin.com/in/avinash-suryawanshi-8a68182b8/',
+        github: 'https://github.com/AvinashS1995',
         twitter: null,
         instagram: null,
         facebook: null,
@@ -269,15 +293,51 @@ export const portfolioData: Portfolio[] = [
         color: '#f58b49',
         icon: 'fas fa-code',
         skills: [
-          { name: 'Angular', icon: 'fab fa-angular', _id: { $oid: '6919a01ae1758d6463a5b465' } },
-          { name: 'Angular Material', icon: 'fas fa-layer-group', _id: { $oid: '6919a01ae1758d6463a5b466' } },
-          { name: 'DevExtreme', icon: 'fas fa-th-large', _id: { $oid: '6919a01ae1758d6463a5b467' } },
-          { name: 'HTML', icon: 'fab fa-html5', _id: { $oid: '6919a01ae1758d6463a5b468' } },
-          { name: 'CSS', icon: 'fab fa-css3-alt', _id: { $oid: '6919a01ae1758d6463a5b469' } },
-          { name: 'JavaScript', icon: 'fab fa-js-square', _id: { $oid: '6919a01ae1758d6463a5b46a' } },
-          { name: 'TypeScript', icon: 'fab fa-js', _id: { $oid: '6919a01ae1758d6463a5b46b' } },
-          { name: 'Bootstrap', icon: 'fab fa-css3-alt', _id: { $oid: '6919a01ae1758d6463a5b46c' } },
-          { name: 'Tailwind', icon: 'fas fa-wind', _id: { $oid: '6919a01ae1758d6463a5b46d' } },
+          {
+            name: 'Angular',
+            icon: 'fab fa-angular',
+            _id: { $oid: '6919a01ae1758d6463a5b465' },
+          },
+          {
+            name: 'Angular Material',
+            icon: 'fas fa-layer-group',
+            _id: { $oid: '6919a01ae1758d6463a5b466' },
+          },
+          {
+            name: 'DevExtreme',
+            icon: 'fas fa-th-large',
+            _id: { $oid: '6919a01ae1758d6463a5b467' },
+          },
+          {
+            name: 'HTML',
+            icon: 'fab fa-html5',
+            _id: { $oid: '6919a01ae1758d6463a5b468' },
+          },
+          {
+            name: 'CSS',
+            icon: 'fab fa-css3-alt',
+            _id: { $oid: '6919a01ae1758d6463a5b469' },
+          },
+          {
+            name: 'JavaScript',
+            icon: 'fab fa-js-square',
+            _id: { $oid: '6919a01ae1758d6463a5b46a' },
+          },
+          {
+            name: 'TypeScript',
+            icon: 'fab fa-js',
+            _id: { $oid: '6919a01ae1758d6463a5b46b' },
+          },
+          {
+            name: 'Bootstrap',
+            icon: 'fab fa-css3-alt',
+            _id: { $oid: '6919a01ae1758d6463a5b46c' },
+          },
+          {
+            name: 'Tailwind',
+            icon: 'fas fa-wind',
+            _id: { $oid: '6919a01ae1758d6463a5b46d' },
+          },
         ],
         _id: { $oid: '6919a01ae1758d6463a5b464' },
       },
@@ -286,11 +346,31 @@ export const portfolioData: Portfolio[] = [
         color: '#f58b49',
         icon: 'fas fa-database',
         skills: [
-          { name: 'Node.js', icon: 'fab fa-node-js', _id: { $oid: '6919a0ade1758d6463a5b4a3' } },
-          { name: 'Express.js', icon: 'fas fa-server', _id: { $oid: '6919a0ade1758d6463a5b4a4' } },
-          { name: 'MongoDB', icon: 'fas fa-leaf', _id: { $oid: '6919a0ade1758d6463a5b4a5' } },
-          { name: '.Net Core', icon: 'fas fa-cube', _id: { $oid: '6919a0ade1758d6463a5b4a6' } },
-          { name: 'MySQL', icon: 'fas fa-database', _id: { $oid: '6919a0ade1758d6463a5b4a7' } },
+          {
+            name: 'Node.js',
+            icon: 'fab fa-node-js',
+            _id: { $oid: '6919a0ade1758d6463a5b4a3' },
+          },
+          {
+            name: 'Express.js',
+            icon: 'fas fa-server',
+            _id: { $oid: '6919a0ade1758d6463a5b4a4' },
+          },
+          {
+            name: 'MongoDB',
+            icon: 'fas fa-leaf',
+            _id: { $oid: '6919a0ade1758d6463a5b4a5' },
+          },
+          {
+            name: '.Net Core',
+            icon: 'fas fa-cube',
+            _id: { $oid: '6919a0ade1758d6463a5b4a6' },
+          },
+          {
+            name: 'MySQL',
+            icon: 'fas fa-database',
+            _id: { $oid: '6919a0ade1758d6463a5b4a7' },
+          },
         ],
         _id: { $oid: '6919a0ade1758d6463a5b4a2' },
       },
@@ -299,14 +379,46 @@ export const portfolioData: Portfolio[] = [
         color: '#f58b49',
         icon: 'fas fa-tools',
         skills: [
-          { name: 'Git & GitHub', icon: 'fab fa-github', _id: { $oid: '6919a172e1758d6463a5b4e9' } },
-          { name: 'Swagger', icon: 'fas fa-file-code', _id: { $oid: '6919a172e1758d6463a5b4ea' } },
-          { name: 'Postman', icon: 'fas fa-envelope-open-text', _id: { $oid: '6919a172e1758d6463a5b4eb' } },
-          { name: 'VS Code', icon: 'fas fa-code', _id: { $oid: '6919a172e1758d6463a5b4ec' } },
-          { name: 'Visual Studio Pro', icon: 'fas fa-laptop-code', _id: { $oid: '6919a172e1758d6463a5b4ed' } },
-          { name: 'Vercel', icon: 'fas fa-rocket', _id: { $oid: '6919a172e1758d6463a5b4ee' } },
-          { name: 'Render', icon: 'fas fa-cloud', _id: { $oid: '6919a172e1758d6463a5b4ef' } },
-          { name: 'CI/CD', icon: 'fas fa-cogs', _id: { $oid: '6919a172e1758d6463a5b4f0' } },
+          {
+            name: 'Git & GitHub',
+            icon: 'fab fa-github',
+            _id: { $oid: '6919a172e1758d6463a5b4e9' },
+          },
+          {
+            name: 'Swagger',
+            icon: 'fas fa-file-code',
+            _id: { $oid: '6919a172e1758d6463a5b4ea' },
+          },
+          {
+            name: 'Postman',
+            icon: 'fas fa-envelope-open-text',
+            _id: { $oid: '6919a172e1758d6463a5b4eb' },
+          },
+          {
+            name: 'VS Code',
+            icon: 'fas fa-code',
+            _id: { $oid: '6919a172e1758d6463a5b4ec' },
+          },
+          {
+            name: 'Visual Studio Pro',
+            icon: 'fas fa-laptop-code',
+            _id: { $oid: '6919a172e1758d6463a5b4ed' },
+          },
+          {
+            name: 'Vercel',
+            icon: 'fas fa-rocket',
+            _id: { $oid: '6919a172e1758d6463a5b4ee' },
+          },
+          {
+            name: 'Render',
+            icon: 'fas fa-cloud',
+            _id: { $oid: '6919a172e1758d6463a5b4ef' },
+          },
+          {
+            name: 'CI/CD',
+            icon: 'fas fa-cogs',
+            _id: { $oid: '6919a172e1758d6463a5b4f0' },
+          },
         ],
         _id: { $oid: '6919a172e1758d6463a5b4e8' },
       },
