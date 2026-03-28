@@ -1,5 +1,6 @@
 export interface Portfolio {
   _id: { $oid: string };
+  appName: string;
   fullName: string;
   email: string;
   role: string;
@@ -91,6 +92,7 @@ export interface Portfolio {
 export const portfolioData: Portfolio[] = [
   {
     _id: { $oid: '691814f858db9a08fdf4368d' },
+    appName: 'NexaProfile',
     fullName: 'Avinash Suryawanshi',
     email: 'abhiyavm@gmail.com',
     role: 'Angular Developer',
