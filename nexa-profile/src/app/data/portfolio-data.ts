@@ -283,7 +283,7 @@ export const portfolioData: Portfolio[] = [
     ],
     contactInfo: {
       location: {
-        company: 'Torrent Pharma Ltd Corporate Office',
+        company: 'Ashram Road, Ahmedabad',
         address: 'Ahmedabad',
         city: 'Gujarat',
         country: 'India',

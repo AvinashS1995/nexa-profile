@@ -63,7 +63,7 @@
     <app-skills-section *ngIf="portfolio.skills.length" [data]="portfolio.skills"></app-skills-section>
     <app-experience-section *ngIf="portfolio.experience.length" [data]="portfolio.experience"></app-experience-section>
     <app-education-section *ngIf="portfolio.education.length" [data]="portfolio.education"></app-education-section>
-    <app-projects-section *ngIf="portfolio.projects.length" [data]="portfolio.projects"></app-projects-section>
+    <app-projects-section *ngIf="portfolio.projects.length" [data]="portfolio.projects" (contactRedirect)="scrollToSection('contact')"></app-projects-section>
     <app-services-section *ngIf="portfolio.services.length" [data]="portfolio.services"></app-services-section>
     <app-contact-section [data]="portfolio.contactInfo"></app-contact-section>
   </div>

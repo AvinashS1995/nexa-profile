@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 
 interface ProjectItem {
   title: string;
@@ -21,8 +21,31 @@ interface ProjectItem {
 export class ProjectsSectionComponent {
   @Input({ required: true }) data!: ProjectItem[];
 
+  @Output() contactRedirect = new EventEmitter<void>();
+
+  showCodeDialog = false;
+
   getTechStack(project: ProjectItem): string[] {
-    const fallback = project.role?.split(',').map((item) => item.trim()).filter(Boolean) ?? [];
-    return project.techStack && project.techStack.length > 0 ? project.techStack : fallback;
+    const fallback =
+      project.role
+        ?.split(',')
+        .map((item) => item.trim())
+        .filter(Boolean) ?? [];
+    return project.techStack && project.techStack.length > 0
+      ? project.techStack
+      : fallback;
+  }
+
+  openCodeDialog() {
+    this.showCodeDialog = true;
+  }
+
+  closeCodeDialog() {
+    this.showCodeDialog = false;
+  }
+
+  goToContact() {
+    this.showCodeDialog = false;
+    this.contactRedirect.emit();
   }
 }
